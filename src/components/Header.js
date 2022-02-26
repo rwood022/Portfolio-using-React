@@ -1,16 +1,22 @@
-// presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
 import React from 'react';
-// Here we import the Header.css file to grant access to some additional classNames
 import '../styles/Header.css';
 
 // TODO: Create a styles object called "styles"
+const styles = {
+  headerStyle: {
+    background: 'orange',
+  },
+  headingStyle: {
+    fontSize: '100px',
+  },
+};
 
 function Header() {
   // TODO: Add a style attribute to header and the h1 element
 
   return (
-    <header className="header">
-      <h1>Hi. I'm Rebecca</h1>
+    <header style={styles.headerStyle} className="header">
+      <h1 style={styles.headingStyle}>Hi. I'm Rebecca</h1>
     </header>
   );
 }
