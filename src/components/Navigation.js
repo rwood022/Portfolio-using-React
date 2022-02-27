@@ -1,14 +1,18 @@
-// titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
 import React from 'react';
-// Here we import the Navbar.css file to grant access to some additional classNames
 import '../styles/Navbar.css';
 
 // TODO: Create a styles object called "styles"
+const styles = {
+  navbarStyle: {
+    background: 'orange',
+    justifyContent: 'flex-end',
+  },
+};
 
 function Navbar() {
   // TODO: Add a style attribute to `nav`
   return (
-    <nav className="navbar">
+    <nav style={styles.navbarStyle}className="navbar">
       <button type="button" onClick={displayAboutMe}>About Me</button>
       <button type="button" onClick={displayProjects}>Projects</button>
       <button type="button" onClick={displayContact}>Contact</button>
