@@ -1,18 +1,25 @@
 import React from "react";
 import Header from "./components/Header";
-import Project from "./components/Project";
-import Navagation from "./components/Navigation";
-import Footer from "./components/Footer";
+// import Project from "./components/Project";
+// import Navagation from "./components/Navigation";
+// import Footer from "./components/Footer";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
     <div>
-      <Navagation />
       <Header />
-      <Project />
-      <Footer />
+      <AboutMe />
     </div>
   );
+   
+    // <div>
+    //   <Navagation />
+    //   <Header />
+    //   <Project />
+    //   <Footer />
+    // </div>
+  
 }
 
 export default App;
