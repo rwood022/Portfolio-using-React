@@ -1,29 +1,33 @@
-// import React, { useState, useEffect } from 'react';
-import './AboutMe';
-import '../styles/Navigation.css';
+import React from 'react';
+// import './AboutMe';
+// import '../styles/Navigation.css';
 
 // TODO: Create a styles object called "styles"
-const styles = {
-  navbarStyle: {
-    background: 'orange',
-    justifyContent: 'flex-end',
-  },
-};
+// const styles = {
+//   navbarStyle: {
+//     background: 'orange',
+//     justifyContent: 'flex-end',
+//   },
+// };
 
 
-function Navbar() {
+function Navigation() {
   // TODO: Add a style attribute to `nav`
   return (
-    <nav style={styles.navbarStyle}className="navbar">
+    <div>
       <button type="button">About Me</button>
-      {/* <button type="button" onClick={displayProjects}>Projects</button>
-      <button type="button" onClick={displayContact}>Contact</button>
-      <button type="button" onClick={displayResume}>Resume</button> */}
-    </nav>
+      <button type="button">Projects</button>
+      <button type="button">Contact</button>
+      <button type="button">Resume</button>
+    </div>
+      
+      // // {/* <button type="button" onClick={displayProjects}>Projects</button>
+      // <button type="button" onClick={displayContact}>Contact</button>
+      // <button type="button" onClick={displayResume}>Resume</button> */}
   );
 }
 
-export default Navbar;
+export default Navigation;
 // click on a navigation title THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
 
 // loading the page will the About me section (pic and bio)

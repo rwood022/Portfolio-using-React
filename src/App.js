@@ -1,15 +1,17 @@
 import React from "react";
 import Header from "./components/Header";
 // import Project from "./components/Project";
-// import Navagation from "./components/Navigation";
 // import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <div>
       <Header />
+      <Navigation />
       <AboutMe />
+      
     </div>
   );
    
