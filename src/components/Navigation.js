@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 import './AboutMe';
 import '../styles/Navigation.css';
 
@@ -15,7 +15,7 @@ function Navbar() {
   // TODO: Add a style attribute to `nav`
   return (
     <nav style={styles.navbarStyle}className="navbar">
-      <button type="button" onClick={displayAboutMe}>About Me</button>
+      <button type="button">About Me</button>
       {/* <button type="button" onClick={displayProjects}>Projects</button>
       <button type="button" onClick={displayContact}>Contact</button>
       <button type="button" onClick={displayResume}>Resume</button> */}

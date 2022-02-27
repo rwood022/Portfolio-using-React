@@ -14,7 +14,7 @@ function Project() {
   <section id="portfolio">
     <h1>Here's Some of My Work!</h1>
     <div id="portfolio-layout">
-      <img src={`${item.imgurl}`} className="project1"></img>
+      {/* <img src={`${item.imgurl}`} className="project1"></img> */}
     </div>
   </section>
 }
