@@ -13,7 +13,9 @@ const styles = {
   function Footer() {
     return (
       <nav style={styles.footerStyle} className="footer">
-        <a href="/">Welcome</a>
+        <a href="/">rwood022@gmail.com</a>
+        <a href="/">LinkedIn</a>
+        <a href="/">GitHub</a>
       </nav>
     );
   }
