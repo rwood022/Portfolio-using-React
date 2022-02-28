@@ -10,7 +10,6 @@ import { isLabelWithInternallyDisabledControl } from '@testing-library/user-even
 const styles = {
   navigationStyle: {
     color: "white",
-    background: 'orange',
     justifyContent: 'center',
   },
 };

@@ -1,9 +1,24 @@
 import React from "react";
 import "../styles/Resume.css";
 
+const styles = {
+    resumeStyle: {
+      color: "white",
+      justifyContent: 'center',
+      background: '#e5989b',
+    },
+  };
+
 export default function Resume() {
+
+
     return (
-        <div className="resume">
+        <div style={styles.resumeStyle}className="resume">
+            <div>
+                <p>Checkout my  
+                    <a href=""> Resume</a>
+                </p>
+            </div>
            <ul>
             <h2>List of proficiencies </h2> 
           

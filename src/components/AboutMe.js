@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/AboutMe.css";
 
 export default function AboutMe() {
     const welcome = "Welcome to My Portfolio!";

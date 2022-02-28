@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../styles/Header.css';
+import '../styles/Header.css';
 
 // TODO: Create a styles object called "styles"
 // const styles = {

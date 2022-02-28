@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../styles/Footer.css';
+import '../styles/Footer.css';
 
 // text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 // contact section- contact form with name and email message, alert that the field needs entry
