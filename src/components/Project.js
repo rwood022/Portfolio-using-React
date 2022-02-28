@@ -4,14 +4,21 @@ import React from 'react';
 
 // TODO: Create a styles object called "styles"
 
-function Project() {
-  // TODO: Add a style attribute to `section`
-  const message = "Here's Some of My Work!";
+function Project(props) {
+  const cardStyle = {
+    width: "10rem",
+  }
   
+
   return (
-  <div id="portfolio">
-    <h1>{message}</h1>
-  </div>
+  <div className="projects">
+    <div classeName="card" style={cardStyle}>
+
+    </div>
+    
+    
+
+    </div>
   )
 }
 

@@ -1,29 +1,69 @@
 import React from 'react';
-// import './AboutMe';
-// import '../styles/Navigation.css';
+import './AboutMe';
+import './Project';
+import './Contact';
+import './Resume';
+import '../styles/Navigation.css';
+import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
 
 // TODO: Create a styles object called "styles"
-// const styles = {
-//   navbarStyle: {
-//     background: 'orange',
-//     justifyContent: 'flex-end',
-//   },
-// };
+const styles = {
+  navigationStyle: {
+    color: "white",
+    background: 'orange',
+    justifyContent: 'center',
+  },
+};
 
 
-function Navigation() {
-  // TODO: Add a style attribute to `nav`
+function Navigation({ currentPage, handlePageChange}) {
+
   return (
-    <div>
-      <button type="button">About Me</button>
-      <button type="button">Projects</button>
-      <button type="button">Contact</button>
-      <button type="button">Resume</button>
-    </div>
+    <ul style={styles.navigationStyle} className="navigation-tabs">
+      <li className="navigation-item">
+        <a
+          href="#aboutMe"
+          onClick={() => handlePageChange('AboutMe')}
+          // This is a conditional (ternary) operator that checks to see if the current page is "Home"
+          // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
+          className={currentPage === 'AboutMe' ? 'navigation-link active' : 'navigation-link'}
+        >
+          About Me
+        </a>
+      </li>
+       <li className="navigation-item">
+        <a
+          href="#projects"
+          onClick={() => handlePageChange('Projects')}
+          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'Projects' ? 'navigation-link active' : 'navigation-link'}
+        >
+          Projects
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#contact"
+          onClick={() => handlePageChange('Contact')}
+          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '' ? 'navigation-link active' : 'navigation-link'}
+        >
+          Contact
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'Resume' ? 'navigation-link active' : 'navigation-link'}
+        >
+          Resume
+        </a>
+      </li>
+     
+     </ul>
       
-      // // {/* <button type="button" onClick={displayProjects}>Projects</button>
-      // <button type="button" onClick={displayContact}>Contact</button>
-      // <button type="button" onClick={displayResume}>Resume</button> */}
   );
 }
 
