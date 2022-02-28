@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/Contact.css"
 
 const styles = {
     contactStyle: {
@@ -47,7 +48,7 @@ export default function Contact() {
             return;
         }
         if (!validateMessage(message)) {
-            setErrorMessage('Message');
+            setErrorMessage('Invalid message');
             return;
         }
 
@@ -69,7 +70,7 @@ export default function Contact() {
                 name="userName"
                 onChange={handleInputChange}
                 type="text"
-                placeHolder="username"
+                placeHolder="name"
                 />
                 <input
                 value={email}
