@@ -6,7 +6,7 @@ import '../styles/Project.css';
 
 function Project() {
   const cardStyle = {
-    width: "10rem",
+    width: "18rem",
     
   }
   
