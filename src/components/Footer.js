@@ -14,9 +14,9 @@ import React from 'react';
   function Footer() {
     return (
       <div className="footer">
-        <button type="button"><a href="/">rwood022@gmail.com</a></button> 
-        <button type="button"><a href="/">LinkedIn</a></button> 
-        <button type="button"><a href="/">GitHub</a></button> 
+        <button className='btn btn-info btn-block'><a href="/">rwood022@gmail.com</a></button> 
+        <button className='btn btn-info btn-block'><a href="https://www.linkedin.com/in/dr-rebecca-wood-7a279846/">LinkedIn</a></button> 
+        <button className='btn btn-info btn-block'><a href="https://github.com/rwood022">GitHub</a></button> 
       </div>
     );
   }
