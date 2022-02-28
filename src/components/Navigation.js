@@ -20,7 +20,7 @@ function Navigation({ currentPage, handlePageChange}) {
 
   return (
     <ul style={styles.navigationStyle} className="navigation-tabs">
-      <li className="navigation-item">
+      <ol className="navigation-item">
         <a
           href="#aboutMe"
           onClick={() => handlePageChange('AboutMe')}
@@ -30,8 +30,8 @@ function Navigation({ currentPage, handlePageChange}) {
         >
           About Me
         </a>
-      </li>
-       <li className="navigation-item">
+      </ol>
+       <ol className="navigation-item">
         <a
           href="#projects"
           onClick={() => handlePageChange('Projects')}
@@ -40,8 +40,8 @@ function Navigation({ currentPage, handlePageChange}) {
         >
           Projects
         </a>
-      </li>
-      <li className="nav-item">
+      </ol>
+      <ol className="nav-item">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -50,8 +50,8 @@ function Navigation({ currentPage, handlePageChange}) {
         >
           Contact
         </a>
-      </li>
-      <li className="nav-item">
+      </ol>
+      <ol className="nav-item">
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
@@ -60,7 +60,7 @@ function Navigation({ currentPage, handlePageChange}) {
         >
           Resume
         </a>
-      </li>
+      </ol>
      
      </ul>
       
