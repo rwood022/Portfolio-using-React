@@ -3,4 +3,9 @@
     padding-right: 40px;
     background: #e5989b;
     color: white;
+    display: flex;
+}
+#profilepic {
+    width: 250px;
+    height: 400px;
 }

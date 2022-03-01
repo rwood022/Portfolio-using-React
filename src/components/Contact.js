@@ -15,7 +15,11 @@ function validateEmail(email) {
 }
 
 function validateMessage(message) {
-    const re = /^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\X])(?=.*[!$#%]).*$/;
+    const re = /^.*(?=.{3,})(?=.*[a-zA-Z]).*$/;
+    // if (message.length > 3){
+    //     return true;
+    // } return false;
+    return re.test(String(message));
 }
 
 export default function Contact() {
