@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rwood022.github.io/portfolio-using-react/",
   "name": "portfolio-using-react",
   "version": "0.1.0",
   "private": true,
@@ -40,6 +41,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://rwood022.github.io/portfilio-using-react"
+  }
+  
 }
