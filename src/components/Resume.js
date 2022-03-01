@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Resume.css";
 
+
 const styles = {
     resumeStyle: {
       color: "white",
@@ -16,7 +17,7 @@ export default function Resume() {
         <div style={styles.resumeStyle}className="resume">
             <div>
                 <p>Checkout my  
-                    <a href=""> Resume</a>
+                    <a href="../images/resume.pdf"> Resume</a>
                 </p>
             </div>
            <ul>
