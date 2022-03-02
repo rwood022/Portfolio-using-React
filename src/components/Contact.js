@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../styles/Contact.css"
+import "../styles/Contact.css";
+import pdf from "../images/resume.pdf";
 
 const styles = {
     contactStyle: {
@@ -16,9 +17,6 @@ function validateEmail(email) {
 
 function validateMessage(message) {
     const re = /^.*(?=.{3,})(?=.*[a-zA-Z]).*$/;
-    // if (message.length > 3){
-    //     return true;
-    // } return false;
     return re.test(String(message));
 }
 
@@ -88,7 +86,7 @@ export default function Contact() {
                 name="message"
                 onChange={handleInputChange}
                 type="text"
-                placeholder="message"
+                placeholder="message (MUST END WITH A PERIOD)"
                 />
                 <button type="button" onClick={handleFormSubmit}>Submit</button>
             </form>

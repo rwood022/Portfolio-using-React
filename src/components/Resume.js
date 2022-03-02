@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Resume.css";
-
+import ResumePdf from "../images/resume.pdf";
 
 const styles = {
     resumeStyle: {
@@ -17,7 +17,7 @@ export default function Resume() {
         <div style={styles.resumeStyle}className="resume">
             <div>
                 <p>Checkout my  
-                    <a href="../images/resume.pdf"> Resume</a>
+                    <a href={ResumePdf}> Resume</a>
                 </p>
             </div>
            <ul>

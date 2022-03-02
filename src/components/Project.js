@@ -8,6 +8,7 @@ function Project() {
   const cardStyle = {
     width: "18rem",
     
+    
   }
   
 
@@ -34,8 +35,13 @@ function Project() {
     </div>
 
     <div className="card" style={cardStyle}>
-    <button className='btn btn-info btn-block'><a href="https://github.com/rwood022/PWA-Text-Editor.git">PWA-Text-Editor</a></button>
+    <button className='btn btn-info btn-block'><a href="https://pwa-text-edit.herokuapp.com/">PWA-Text-Editor</a></button>
       <p className='card-text'>A text editing Progressive Web Application, capable of installation on local computer. * Javascript, CSS, webpack configuration, service workers. </p>
+    </div>
+
+    <div className="card" style={cardStyle}>
+    <button className='btn btn-info btn-block'><a href="https://rwood022.github.io/Weather-now/">Weather Now</a></button>
+      <p className='card-text'>An application that displays the current weather and the 5-day forecast of any major city. * API calls, Javascript, HTML, CSS. </p>
     </div>
 
     
