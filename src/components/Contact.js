@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
-import pdf from "../images/resume.pdf";
+
 
 const styles = {
     contactStyle: {
