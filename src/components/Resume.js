@@ -17,7 +17,8 @@ export default function Resume() {
         <div style={styles.resumeStyle}className="resume">
             <div>
                 <p>Checkout my  
-                    <a href={ResumePdf}> Resume</a>
+                    <a href="https://drive.google.com/file/d/1ywVmMcUWoEwYNN8E3wBXS9d3PkkNJO_M/view?usp=sharing" target="_blank" rel='noreferrer'>Resume</a>
+                    {/* <a href={ResumePdf}> Resume</a> */}
                 </p>
             </div>
            <ul>
